@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Fare Table</title>
+    <link rel="stylesheet" href="fare.css">
+</head>
+<body>
+  <header>
+    <div class="header1">
+        <nav>
+            <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fare.html">Fare</a></li>
+                <li style="margin-left: 700px;"><b>RailConnect</b></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+   
+    <div class="container">
+        <h1>FARE PRICE ENQUIRY</h1>
+        <form id="fareForm">
+            <label for="from">From:</label>
+            <select name="from" id="from" name="from">
+                <option value="">Enter departure city</option>
+                <option value="kpy">KPY-Karunagapally</option>
+                <option value="kyj">KYJ-Kayamkulam Junction</option>
+                <option value="bmt">BMT-Hyderabad Begampet</option>
+                <option value="tvc">TVC-Trivandrum Central</option>
+                <option value="ndls">NDLS-New Delhi</option>
+                <option value="mmct">MMCT-Mumbai Central</option>
+                <option value="sbc">SBC-Bangalore City Junction</option>
+                <option value="pune">Pune Junction</option>
+            </select>
+            <label for="to">To:</label>
+            <select name="to" id="to" name="to" >
+                <option value="">Enter destination city</option>
+                <option value="kpy">KPY-Karunagapally</option>
+                <option value="kyj">KYJ-Kayamkulam Junction</option>
+                <option value="bmt">BMT-Hyderabad Begampet</option>
+                <option value="tvc">TVC-Trivandrum Central</option>
+                <option value="ndls">NDLS-New Delhi</option>
+                <option value="mmct">MMCT-Mumbai Central</option>
+                <option value="sbc">SBC-Bangalore City Junction</option>
+                <option value="pune">Pune Junction</option>
+            </select>
+            <button type="submit">Get Fare</button>
+        </form>
+        <div id="fareTableContainer"></div>
+    </div>
+
+    <script src="fare.js"></script>
+</body>
+</html>
